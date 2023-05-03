@@ -46,6 +46,12 @@ pipeline {
                 sleep 10
             }
         }
+        stage("B") {
+            steps {
+                echo "This is the B Stage"
+                sleep 10
+            }
+        }
         stage("Deploy to Production") {
         steps {
             echo "This is the Deploy to Production Stage"
