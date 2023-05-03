@@ -40,12 +40,6 @@ pipeline {
                 sleep 10
             }
         }
-         stage("Kevin") {
-            steps {
-                echo "This is the Kevin Stage"
-                sleep 10
-            }
-         }
         stage("Deploy to Production") {
         steps {
             echo "This is the Deploy to Production Stage"
