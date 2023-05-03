@@ -32,6 +32,7 @@ pipeline {
             steps {
                 echo "This is the Deploy Stage"
                 echo "Deploy the application to a testing environment: $TESTING_ENVIRONMENT"
+                
             }
         }
         stage("Approval") {
@@ -44,7 +45,7 @@ pipeline {
         steps {
             echo "This is the Deploy to Production Stage"
             echo "Deploy the code to the Production environment: $PRODUCTION_ENVIRONMENT"
-            sleep 10
+            sleep 20
             
         }
     }
