@@ -40,9 +40,9 @@ pipeline {
                 sleep 10
             }
         }
-        stage("Deploy to James") {
+        stage("Deploy to Kevin") {
         steps {
-            echo "This is the James to Production Stage"
+            echo "This is the Kevin to Production Stage"
             echo "Deploy the code to the Production environment: $PRODUCTION_ENVIRONMENT"
             
         }
