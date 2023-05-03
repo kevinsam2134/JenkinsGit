@@ -45,7 +45,7 @@ pipeline {
         steps {
             echo "This is the Deploy to Production Stage"
             echo "Deploy the code to the Production environment: $PRODUCTION_ENVIRONMENT"
-            sleep 20
+            sleep 5
             
         }
     }
